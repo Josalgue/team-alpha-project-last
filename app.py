@@ -9,8 +9,20 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/popularityBenchmark")
+def popularityBenchmark():
+    return render_template("popularityBenchmark.html")   
+
+@app.route("/chronologicalAnalysis")
+def chronologicalAnalysis():
+    return render_template("chronologicalAnalysis.html")  
+
+@app.route("/byArtistHistogram")
+def byArtistHistogram():
+    return render_template("byArtistHistogram.html") 
+
 @app.route("/musicAnalysis")
-def byCountry():
+def musicAnalysis():
     return render_template("musicAnalysis.html")
 
 @app.route("/byCountry")

@@ -101,11 +101,13 @@
         </div>
 </head>
 <body>
-<div class="content">
-    <div class="flex-container">
-        <div class="row">
-                  <div class="card" style="padding-left: 0px; padding-top: 50px; ">        
-            <br>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="card" style="padding-left: 5px;">
+                      <div class="card-body">
+
             <!-- ESTO ES EL CÓDIGO NECESARIO EN EL HTML: -->
     <h2 class="text-md-center">Top Genres according to their Popularity:</h2>
     <p style="font-size:110%" class="text-md-center">This comprehensive hex chart serves as selector to display the features data for all genres in scope.
@@ -113,10 +115,46 @@
     <div id="chart" class="text-md-center"></div>
     <h3 class="title_radar text-center"  >Genre:</h3>
     <div class="radarChart" style="padding-top: 10px;padding-left: 45px;"></div> 
+    <br>
+
+
 </div> 
 </div> 
+
+
 </div> 
+            <div class="col-sm-2" style="padding-left: 20px;">
+                <div class="container-fluid">
+                <div class="panel panel-default" >
+                        <div class="panel-body-center">                                    
+                            <h2 class="text-md-center" style="padding-top: 70px;" >Charts</h2>
+                            <hr>
+                            <h6 class="card-title text-center">By Country comparison of Produced and Consumed music.</h7>
+                            <br>
+                            <br>
+                            <div class="row" >
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byCountry"><img class = "img img-responsive center" src="/static/img/feat-compare.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
+                          </div>
+                          <br>
+                          <h6 class="card-title text-center">By Decade corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byDecade"><img class = "img img-responsive" src="/static/img/gauges.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
+                          </div>
+                          <br>
+                          <h6 class="card-title" style="text-align: center;">By Genre corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byGenre"><img class = "img img-responsive" src="/static/img/hex.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;" alt=""></a></div>
+                        </div>
+                        </div>
+                </div>     
+            </div> 
+            </div> 
+
 </div> 
+
+ 
 
         <!--===== MAIN JS =====-->
         <script src="static/js/main.js"></script>

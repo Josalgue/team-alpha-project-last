@@ -184,12 +184,14 @@
 <div class="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                   <div class="card" style="padding-left: 5px;">
                     <div class="card-body">
         
         <h1 class="card-title text-center" style="padding-top: 65px; opacity: 0.7;" >Musical Wonder Finder</h1>
         <img src="/static/img/alpha-icon.png" alt="" class="center" style="display: block;margin-left: auto;margin-right: auto;width: 3%;">
+        <h4 class="card-title text-center" style="padding-top: 10px; opacity: 0.7;" >Team Alpha Final project</h4>
+
         <br>
             <p class="p" style="font-size:150%">This dashboard serves music business purposes by displaying the main features of popular music, according to Spotify's taxonomy. This helps to take decisions such as where to promote certain albums or how to develop new talents according to a local or regional taste.</p>
             <p class="p1 text-center" style="font-size:150%">This study focuses on:</p>
@@ -199,9 +201,32 @@
             <br>
             <li style="font-size:105%"><b>Energy</b> represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.</li>
             <br>
-            <li style="font-size:105%">The <b>Popularity</b> of the artist. The value will be between 0 and 100, with 100 being the most popular. The artist’s popularity is calculated from the popularity of all the artist’s tracks.</li>
+            <li style="font-size:105%">The <b>Popularity</b> of the songs. The value will be between 0 and 100, with 100 being the most popular. The artist’s popularity is calculated from the popularity of all the artist’s tracks.</li>
             <br>
-            <p class= "p2" style="font-size:120%">Please consider that the charts portray data as proportions, in order to effectively compare the different feature indexes, as they are not equally measured.</p>
+            <li style="font-size:105%">The <b>Explicitness</b> of the songs, represented by 1 (Yes) and 0 (No).</li>
+            <br>
+            <li style="font-size:105%">The <b>Key</b> in which the song is composed. Values range from 0 to 11 and represent musical notes.</li>
+            <br>
+            <br>
+            <li style="font-size:105%"><b>Loudness</b>, measured in decibels.</li>
+            <br>
+            <li style="font-size:105%">The <b>Mode</b> in which the song is composed, represented by 1 (Major) and 0 (Minor).</li>
+            <br>
+            <li style="font-size:105%">The <b>Speechiness</b>, measuring the rate of spoken words in song.</li>
+            <br>
+            <li style="font-size:105%">The <b>Instrumentalness</b>, that shows how many instrumental parts a song contains.</li>
+            <br>
+            <li style="font-size:105%">The <b>Acousticness</b>, representing the usage of acoustic instruments.</li>
+            <br>
+            <li style="font-size:105%"><b>Livenes</b>, a metric that shows if the song was recorded live.</li>
+            <br>
+            <li style="font-size:105%">The <b>Tempo</b> of songs, measured in bits per minute.</li>
+            <br>
+            <li style="font-size:105%">The <b>Duration</b> of songs, measured in miliseconds.</li>
+            <br>
+            <li style="font-size:105%">The <b>Time Signature</b>, ranging from 0 to 5, representing the number of bars per barline in the metric of a song.</li>
+            <br>
+            <p class= "p2" style="font-size:120%">All of these features were used to train our ML model.</p>
             
  <center>
         <h2>Click image to expand the Data Exploration Chart</h2>
@@ -256,35 +281,7 @@
 </div>
 
                     
-
-            <div class="col-sm-2" style="padding-left: 20px;">
-                <div class="container-fluid">
-                <div class="panel panel-default" >
-                        <div class="panel-body-center">                                    
-                            <h2 class="text-md-center" style="padding-top: 70px;" >Charts</h2>
-                            <hr>
-                            <h6 class="card-title text-center">By Country comparison of Produced and Consumed music.</h7>
-                            <br>
-                            <br>
-                            <div class="row" >
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byCountry"><img class = "img img-responsive center" src="/static/img/feat-compare.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
-                          </div>
-                          <br>
-                          <h6 class="card-title text-center">By Decade corelation of Valence, Danceability, Energy and Popularity.</h7>
-                          <br>
-                          <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byDecade"><img class = "img img-responsive" src="/static/img/gauges.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
-                          </div>
-                          <br>
-                          <h6 class="card-title" style="text-align: center;">By Genre corelation of Valence, Danceability, Energy and Popularity.</h7>
-                          <br>
-                          <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byGenre"><img class = "img img-responsive" src="/static/img/hex.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;" alt=""></a></div>
-                        </div>
-                        </div>
-                </div>     
-            </div> 
-            </div> 
+ 
         </div>
     </div>
 </div>

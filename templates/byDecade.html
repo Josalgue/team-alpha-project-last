@@ -63,123 +63,66 @@
                             <span class="nav__name">Start</span>
                         </a>
 
-                        <a href="/popularityBenchmark" class="nav__link ">
-                            <i class='bx bxs-directions' ></i>
-                            <span class="nav__name">Popularity Benchmark</span>
-                        </a>
-
-                        <a href="/chronologicalAnalysis" class="nav__link">
-                            <i class='bx bx-stats' ></i>
-                            <span class="nav__name">Chronological Analysis</span>
-                        </a>
-
-                        <a href="/byArtistHistogram" class="nav__link ">
-                            <i class='bx bx-abacus' ></i>
-                            <span class="nav__name">Artist Histogram</span>
-                        </a>
-
-                        <a href="/musicAnalysis" class="nav__link ">
-                            <i class='bx bxs-volume-full' ></i>
-                            <span class="nav__name">Music Anaylisis</span>
-                        </a>
-
                         <a href="/byCountry" class="nav__link ">
                             <i class='bx bx-map nav__icon' ></i>
                             <span class="nav__name">By Country</span>
                         </a>
 
-                        <a href="/byGenre" class="nav__link">
+                        <a href="/byGenre" class="nav__link ">
                             <i class='bx bx-music nav__icon' ></i>
                             <span class="nav__name">By Genre</span>
                         </a>
 
-                        <a href="/byDecade" class="nav__link active">
+                        <a href="/byDecade" class="nav__link active" >
                             <i class='bx bx-bookmark nav__icon' ></i>
                             <span class="nav__name">By Decade</span>
                         </a>
+
                     </div>
                 </div>
+
             </nav>
 
 </div>   
         </div>
 </head>
 <body>
-    <div class="content">
-        <div class="container-fluid">
-<div class="row">
-    <div class="col-xm-8">
-        <div class="card" style="padding-left: 50px; padding-top: 70px; padding-right: 50px;" >
-            <div class="card-body">
-<div class="row">
-      <div class="title" style="margin: auto">
-        <h2 class="text-md-center">AVG Properties per Decade</h2>
-        <p style="font-size:110%" class="text-md-center">The gauges show how the music features have changed through time.</p>
-        <div class="container-fluid; text-md-center" style="padding-top: 20px;" id="select_container">
-        <div><select id="selDataset">
-          <option value="Please select a decade" selected >Please select a decade</option>
-          <option value="1950">1950</option>
-          <option value="1960">1960</option>
-          <option value="1970">1970</option>
-          <option value="1980">1980</option>
-          <option value="1990">1990</option>
-          <option value="2000">2000</option>
-          <option value="2010">2010</option>
-        </select>
-    </div>
-      </div>
-     
+<div class="content">
+                <div class="container-fluid">
+        <div class="row">
+            <div class="col-xm-8">
+                <div class="card" style="padding-left: 50px; padding-top: 70px; padding-right: 50px;" >
+                    <div class="card-body">
+        <div class="row">
+              <div class="title" style="margin: auto">
+                <h2 class="text-md-center">AVG Properties per Decade</h2>
+                <p style="font-size:110%" class="text-md-center">The gauges show how the music features have changed through time.</p>
+                <div class="container-fluid; text-md-center" style="padding-top: 20px;" id="select_container">
+                <div><select id="selDataset">
+                  <option value="Please select a decade" selected >Please select a decade</option>
+                  <option value="1950">1950</option>
+                  <option value="1960">1960</option>
+                  <option value="1970">1970</option>
+                  <option value="1980">1980</option>
+                  <option value="1990">1990</option>
+                  <option value="2000">2000</option>
+                  <option value="2010">2010</option>
+                </select>
+            </div>
+              </div>
+             
         </div>
 
         <div id="chart"  ></div>
         <div id="chart1" ></div>
         <div id="chart2" ></div>
         <div id="chart3" ></div>
+    </div>
 </div>
 </div>
 </div>
 </div>
-<div class="col-sm-2" style="padding-left: 20px;">
-    <div class="container-fluid">
-    <div class="panel panel-default" >
-            <div class="panel-body-center">                                    
-                <h2 class="text-md-center" style="padding-top: 70px;" >Charts</h2>
-                <hr>
-                <h6 class="card-title text-center">By Country comparison of Produced and Consumed music.</h7>
-                <br>
-                <br>
-                <div class="row" >
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byCountry"><img class = "img img-responsive center" src="/static/img/feat-compare.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
-              </div>
-              <br>
-              <h6 class="card-title text-center">By Decade corelation of Valence, Danceability, Energy and Popularity.</h7>
-              <br>
-              <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byDecade"><img class = "img img-responsive" src="/static/img/gauges.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
-              </div>
-              <br>
-              <h6 class="card-title" style="text-align: center;">By Genre corelation of Valence, Danceability, Energy and Popularity.</h7>
-              <br>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byGenre"><img class = "img img-responsive" src="/static/img/hex.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;" alt=""></a></div>
-            </div>
-            </div>
-    </div>     
-</div> 
-</div> 
-
 </div>
-
-</div>
-
-
-</div>
-
-<div class="text-md-center" style="padding-top: 10px ">
-    <h5>Team Alpha are</h5>
-    <p class="p" style="font-size:110%">Harpreet Kaur  |  Jesús Daniel Sánchez  |  Alfonso Covarrubias  |  Jonathan Salguero</p>                           
-    </div>    
-
 
 
         <!--===== MAIN JS =====-->

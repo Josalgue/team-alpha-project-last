@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="static/css/styles.css">
+
+            <!-- Load c3.css -->
+    <link href="static/css/c3.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- THIS ARE THE DEPENDENCIES NECESARIES FOR THE PAGE TO RUN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    
+    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+    
+    <!-- Load d3.js and c3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="static/js/c3.min.js"></script>
+    
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <title>Sidebar menu responsive</title>
+    </head>
+
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="static/img/alpha-icon.png" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-play-circle nav__logo-icon'></i>
+                        <span class="nav__logo-name">Wonder Finder</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="/" class="nav__link">
+                        <i class='bx bxs-dashboard nav__icon' ></i>
+                            <span class="nav__name">Start</span>
+                        </a>
+
+                        <a href="/byCountry" class="nav__link ">
+                            <i class='bx bx-map nav__icon' ></i>
+                            <span class="nav__name">By Country</span>
+                        </a>
+
+                        <a href="/byGenre" class="nav__link ">
+                            <i class='bx bx-music nav__icon' ></i>
+                            <span class="nav__name">By Genre</span>
+                        </a>
+
+                        <a href="/byDecade" class="nav__link active" >
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">By Decade</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </nav>
+
+</div>   
+        </div>
+</head>
+<body>
+<div class="content">
+                <div class="container-fluid">
+        <div class="row">
+            <div class="col-xm-8">
+                <div class="card" style="padding-left: 50px; padding-top: 70px; padding-right: 50px;" >
+                    <div class="card-body">
+        <div class="row">
+              <div class="title" style="margin: auto">
+                <h2 class="text-md-center">AVG Properties per Decade</h2>
+                <p style="font-size:110%" class="text-md-center">The gauges show how the music features have changed through time.</p>
+                <div class="container-fluid; text-md-center" style="padding-top: 20px;" id="select_container">
+                <div><select id="selDataset">
+                  <option value="Please select a decade" selected >Please select a decade</option>
+                  <option value="1950">1950</option>
+                  <option value="1960">1960</option>
+                  <option value="1970">1970</option>
+                  <option value="1980">1980</option>
+                  <option value="1990">1990</option>
+                  <option value="2000">2000</option>
+                  <option value="2010">2010</option>
+                </select>
+            </div>
+              </div>
+             
+        </div>
+
+        <div id="chart"  ></div>
+        <div id="chart1" ></div>
+        <div id="chart2" ></div>
+        <div id="chart3" ></div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="static/js/main.js"></script>
+
+
+        <!-- Chart scripts -->
+    
+        <script src="static/data/countries_comparison.json"></script>
+        <script src="static/js/NEW app vertical.js"></script>  
+        <script src="static/js/config.js"></script>
+
+    </body>
+</html>

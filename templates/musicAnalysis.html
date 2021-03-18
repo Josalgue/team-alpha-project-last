@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="static/css/styles.css">
+
+            <!-- Load c3.css -->
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+            <!-- THESE ARE THE LIBRARIES NEEDED -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+
+        
+
+        <title>Sidebar menu responsive</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-play-circle nav__logo-icon'></i>
+                        <span class="nav__logo-name">Wonder Finder</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="/" class="nav__link active">
+                        <i class='bx bxs-dashboard nav__icon' ></i>
+                            <span class="nav__name">Start</span>
+                        </a>
+
+                        <a href="/byCountry" class="nav__link ">
+                            <i class='bx bx-map nav__icon' ></i>
+                            <span class="nav__name">By Country</span>
+                        </a>
+
+                        <a href="/byGenre" class="nav__link">
+                            <i class='bx bx-music nav__icon' ></i>
+                            <span class="nav__name">By Genre</span>
+                        </a>
+
+                        <a href="/byDecade" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">By Decade</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+</div>   
+        </div>
+</head>
+<body>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                  <div class="card" style="padding-left: 5px;">
+                    <div class="card-body">
+        
+        <h1 class="card-title text-center" style="padding-top: 65px; opacity: 0.7;" >Wonder Finder</h1>
+        <img src="/static/img/alpha-icon.png" alt="" class="center" style="display: block;margin-left: auto;margin-right: auto;width: 3%;">
+        <h4 class="card-title text-center" style="padding-top: 10px; opacity: 0.7;" >Team Alpha 2nd project</h4>
+        <br>
+
+        <div class='tableauPlaceholder' id='viz1616056783195' style='position: sticky'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;Musicalanalysis&#47;Harmonical&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Musicalanalysis&#47;Harmonical' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;Musicalanalysis&#47;Harmonical&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1616056783195');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        
+            <br>
+        </div>
+    </div>
+</div>
+
+                    
+
+            <div class="col-sm-3" style="padding-left: 20px;">
+                <div class="container-fluid">
+                <div class="panel panel-default" >
+                        <div class="panel-body-center">                                    
+                            <h2 class="text-md-center" style="padding-top: 70px;" >Charts</h2>
+                            <hr>
+                            <h6 class="card-title text-center">By Country comparison of Produced and Consumed music.</h7>
+                            <br>
+                            <br>
+                            <div class="row" >
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byCountry"><img class = "img img-responsive center" src="/static/img/feat-compare.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
+                          </div>
+                          <br>
+                          <h6 class="card-title text-center">By Decade corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byDecade"><img class = "img img-responsive" src="/static/img/gauges.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;"  alt=""></a></div>
+                          </div>
+                          <br>
+                          <h6 class="card-title" style="text-align: center;">By Genre corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="https://team-alpha-project-2.herokuapp.com/byGenre"><img class = "img img-responsive" src="/static/img/hex.JPG" style="width:140%; text-align: center; margin:20px; padding-left: 60px;" alt=""></a></div>
+                        </div>
+                        </div>
+                </div>     
+            </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+            <div class="text-md-center" style="padding-top: 10px ">
+                <h5>Team Alpha are</h5>
+                <p class="p" style="font-size:110%">Harpreet Kaur  |  Jesús Daniel Sánchez  |  Alfonso Covarrubias  |  Jonathan Salguero</p>                           
+                </div>    
+     
+    </div>    
+
+
+        <!--===== MAIN JS =====-->
+        <script src="static/js/main.js"></script>
+
+
+        <!-- Chart scripts -->
+    
+    <script src="static/js/app.js"></script>
+    <script src="static/data/countries_comparison.json"></script>
+
+        <!-- Load d3.js and c3.js -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="static/js/c3.min.js"></script>
+        <link href="static/css/c3.css" rel="stylesheet">
+        <script src="static/js/config.js"></script>
+
+        <script src="static/js/NEW app vertical.js"></script>  
+        <script src="static/data/countries_comparison.json"></script>
+
+    </body>
+</html>

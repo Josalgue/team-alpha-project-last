@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ===== BOX ICONS ===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="static/css/styles.css">
-
-            <!-- Load c3.css -->
-    <link href="static/css/c3.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-
-
-    <!-- ESTAS SON LAS LIBRERÍAS NECESARIAS: -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test chart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
@@ -28,144 +13,47 @@
     <script src="https://d3js.org/d3-color.v2.min.js"></script>
     <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+</head>
+<body>
+    <h2 class="text-center">Top Songs according to their Popularity:</h2>
+    <h5 class="text-center">Click on any frame if you want to listen to the song on Spotify</h5>
+    <h5 class="text-center">(you must have a valid Spotify account)</h5>
+    <div id="chart"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <h3 class="text-center">Song:</h3>
+                <h4 class="title_radar text-center" ></h4>
+                <br>
+
+                <h3 class="text-center">Artist:</h3>
+                <h4 class="artist_name_radar text-center" ></h4>
+                <br>
+                
+                <h3 class="text-center">Album:</h3>
+                <h4 class="album_name_radar text-center" ></h4>
+                <br>
+                
+                <h3 class="text-center">Release Date:</h3>
+                <h4 class="album_date_radar text-center" ></h4>
+                <br>                
+               
+            </div>
+            
+            <div class="col-9">
+                <div class="radarChart"></div>
+            </div>
+        </div>
+    </div>
+
+
 
     
 
-        
-
-        <title>Sidebar menu responsive</title>
-    </head>
-    <body id="body-pd">
-        <header class="header" id="header">
-            <div class="header__toggle">
-                <i class='bx bx-menu' id="header-toggle"></i>
-            </div>
-
-            <div class="header__img">
-                <img src="static/img/alpha-icon.png" alt="">
-            </div>
-        </header>
-
-        <div class="l-navbar" id="nav-bar">
-            <nav class="nav">
-                <div>
-                    <a href="#" class="nav__logo">
-                        <i class='bx bx-play-circle nav__logo-icon'></i>
-                        <span class="nav__logo-name">Wonder Finder</span>
-                    </a>
-
-                    <div class="nav__list">
-                        <a href="/" class="nav__link">
-                        <i class='bx bxs-dashboard nav__icon' ></i>
-                            <span class="nav__name">Start</span>
-                        </a>
-
-                        <a href="/popularityBenchmark" class="nav__link ">
-                            <i class='bx bxs-directions' ></i>
-                            <span class="nav__name">Billboard vs Spotify</span>
-                        </a>
-
-                        <a href="/chronologicalAnalysis" class="nav__link">
-                            <i class='bx bx-stats' ></i>
-                            <span class="nav__name">Time Analysis</span>
-                        </a>
-
-                        <a href="/byArtistHistogram" class="nav__link ">
-                            <i class='bx bx-abacus' ></i>
-                            <span class="nav__name">Artist Histogram</span>
-                        </a>
-
-                        <a href="/musicAnalysis" class="nav__link ">
-                            <i class='bx bxs-volume-full' ></i>
-                            <span class="nav__name">Music Anaylisis</span>
-                        </a>
-
-                        <a href="/byCountry" class="nav__link ">
-                            <i class='bx bx-map nav__icon' ></i>
-                            <span class="nav__name">By Country</span>
-                        </a>
-
-                        <a href="/byGenre" class="nav__link active">
-                            <i class='bx bx-music nav__icon' ></i>
-                            <span class="nav__name">By Genre</span>
-                        </a>
-
-                        <!-- <a href="/byDecade" class="nav__link">
-                            <i class='bx bx-bookmark nav__icon' ></i>
-                            <span class="nav__name">By Decade</span>
-                        </a> -->
-                    </div>
-                </div>
-            </nav>
-
-</div>   
-        </div>
-</head>
-<body>
-    <div class="content">
-        <div class="flex-container">
-            <div class="row">
-                    <div class="card" style="padding-left: 20px; padding-top: 50px;">
-                      <div class="card-body">
-                        <h1 class="card-title text-center" style="padding-top: 65px; opacity: 0.7;" >Musical Wonder Finder</h1>
-                        <img src="/static/img/alpha-icon.png" alt="" class="center" style="display: block;margin-left: auto;margin-right: auto;width: 3%;">
-            <!-- ESTO ES EL CÓDIGO NECESARIO EN EL HTML: -->
-            <h5 class="text-center">Click on any frame if you want to listen to the song on Spotify</h5>
-            <h5 class="text-center">(you must have a valid Spotify account)</h5>
-            <div id="chart"></div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <h3 class="text-center">Song:</h3>
-                        <h4 class="title_radar text-center" ></h4>
-                        <br>
-        
-                        <h3 class="text-center">Artist:</h3>
-                        <h4 class="artist_name_radar text-center" ></h4>
-                        <br>
-                        
-                        <h3 class="text-center">Album:</h3>
-                        <h4 class="album_name_radar text-center" ></h4>
-                        <br>
-                        
-                        <h3 class="text-center">Release Date:</h3>
-                        <h4 class="album_date_radar text-center" ></h4>
-                        <br>                
-                       
-                    </div>
-                    
-                    <div class="col-9">
-                        <div class="radarChart"></div>
-                    </div>
-                </div>
-            </div>
-        
-        
-        
-            
-        
-            <script src="static/data/popularity.json"></script>
-            <script src="static/data/data_radar_chart.js"></script>
-            <script src="static/js/app hexagon radar chart.js"></script> 
-
-</div> 
-</div> 
-
-
-</div> 
-
- 
-
-        <!--===== MAIN JS =====-->
-        <script src="static/js/main.js"></script>
-
-
-    <!-- ESTOS SON LOS SCRIPTS Y FILES NECESARIOS PARA QUE CORRA: -->
     <script src="static/data/popularity.json"></script>
     <script src="static/data/data_radar_chart.js"></script>
-    <script src="static/js/hexagon_radar_chart.js"></script> 
+    <script src="static/js/app hexagon radar chart.js"></script> 
 
 
-
-    </body>
+</body>
 </html>
